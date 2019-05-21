@@ -1,9 +1,7 @@
 import express from 'express'
-
+import user from '../controller/userController'
 const router=express.Router()
 
-router.get('/register',(req,res)=>{
-    console.log('请求成功')
-    res.send('请求成功');
-})
+router.get('/getUser',user.getUser)
+router.post('/addUser',user.addUser)
 export default router
