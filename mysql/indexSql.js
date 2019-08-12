@@ -2,9 +2,9 @@ import mysql from 'mysql'
 import { resolve } from 'url';
 import { rejects } from 'assert';
 var pool=mysql.createPool({
-    host:'193.112.52.27',
+    host:'localhost',
     user:'root',
-    password:'1q2w3e4r!!',
+    password:'',
     port:'3306',
     database:'officeWeb'
 });
